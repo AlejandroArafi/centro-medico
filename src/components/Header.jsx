@@ -40,15 +40,19 @@ const Header = () => {
           </div>
 
           <nav>
+            {/* inicio */}
+
             <ul className="flex space-x-8">
               <li>
-                <a
-                  href="#"
+                <Link
+                  to='/Home'
                   className="text-gray-600 hover:text-blue-600 transition-colors"
                 >
                   Inicio
-                </a>
+                </Link>
               </li>
+
+              {/* servicios*/}
               <li>
                 <a
                   href="/Service"
@@ -58,6 +62,7 @@ const Header = () => {
                 </a>
               </li>
 
+              {/* doctores*/}
               <li>
                 <Link
                   to="#"
@@ -67,6 +72,7 @@ const Header = () => {
                 </Link>
               </li>
 
+              {/* especialidades*/}
               <li>
                 <a
                   href="#"
@@ -75,13 +81,16 @@ const Header = () => {
                   Especialidades
                 </a>
               </li>
+
+              {/* contacto*/}
+
               <li>
-                <a
-                  href="#"
+                <Link
+                  to='/Contact'
                   className="text-gray-600 hover:text-blue-600 transition-colors"
                 >
                   Contacto
-                </a>
+                </Link>
               </li>
             </ul>
           </nav>
