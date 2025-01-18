@@ -7,6 +7,7 @@ function App() {
   return (
     <div className="min-h-screen bg-gray-50">
       <Routes>  
+        <Route path="/" element={<Home />} />
         <Route path="/Home" element={<Home />} />
         <Route path="/Service" element={<Service />} />
         <Route path="/Contact" element={<Contact />} />
