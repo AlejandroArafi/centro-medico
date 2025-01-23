@@ -40,7 +40,7 @@ const Contact = () => {
                   <div>
                     <h4 className="font-semibold text-gray-900">Teléfonos</h4>
                     <p className="text-gray-600">Emergencias: (2) 123-4567</p>
-                    <p className="text-gray-600">Citas: (569) 123-4568</p>
+                    <p className="text-gray-600">Citas: (2) 123-4568</p>
                   </div>
                 </div>
 
@@ -60,7 +60,7 @@ const Contact = () => {
                   <div>
                     <h4 className="font-semibold text-gray-900">Dirección</h4>
                     <p className="text-gray-600">Av. Principal 123</p>
-                    <p className="text-gray-600">Ciudad, País</p>
+                    <p className="text-gray-600">Santiago, Chile</p>
                   </div>
                 </div>
 

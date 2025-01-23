@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Phone, Clock, MapPin, Heart, Menu, X } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -36,12 +37,12 @@ const Header = () => {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <div className="flex items-center">
-            <Heart className="h-8 w-8 text-blue-600 mr-2" />
+            <Heart className="h-9 w-9 text-red-500 mr-2 mb-4" />
             <div>
               <h1 className="text-xl md:text-2xl font-bold text-gray-800">
                 Centro Médico Salud
               </h1>
-              <p className="text-sm text-gray-600 hidden md:block">
+              <p className="text-base text-gray-600 hidden md:block">
                 Cuidando tu bienestar
               </p>
             </div>
@@ -68,44 +69,48 @@ const Header = () => {
           <nav className="hidden md:block">
             <ul className="flex space-x-8">
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/"
                   className="text-gray-600 hover:text-blue-600 transition-colors"
                 >
                   Inicio
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/services"
                   className="text-gray-600 hover:text-blue-600 transition-colors"
                 >
                   Servicios
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
-                  className="text-gray-600 hover:text-blue-600 transition-colors"
+                <Link
+                  to="/doctores"
+                  className={`text-gray-600 hover:text-blue-600 transition-colors ${
+                    location.pathname === "/doctores"
+                      ? "text-blue-600 font-medium"
+                      : ""
+                  }`}
                 >
                   Doctores
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/specialties"
                   className="text-gray-600 hover:text-blue-600 transition-colors"
                 >
                   Especialidades
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/contact"
                   className="text-gray-600 hover:text-blue-600 transition-colors"
                 >
                   Contacto
-                </a>
+                </Link>
               </li>
             </ul>
           </nav>
@@ -117,44 +122,36 @@ const Header = () => {
             <nav className="container mx-auto px-4 py-4">
               <ul className="space-y-4">
                 <li>
-                  <a
-                    href="#"
+                  <Link
+                    to="/"
                     className="block text-gray-600 hover:text-blue-600 transition-colors py-2"
                   >
                     Inicio
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#"
+                  <Link
+                    to="/services"
                     className="block text-gray-600 hover:text-blue-600 transition-colors py-2"
                   >
                     Servicios
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#"
-                    className="block text-gray-600 hover:text-blue-600 transition-colors py-2"
-                  >
-                    Doctores
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
+                  <Link
+                    to="/specialties"
                     className="block text-gray-600 hover:text-blue-600 transition-colors py-2"
                   >
                     Especialidades
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#"
+                  <Link
+                    to="/contact"
                     className="block text-gray-600 hover:text-blue-600 transition-colors py-2"
                   >
                     Contacto
-                  </a>
+                  </Link>
                 </li>
               </ul>
 

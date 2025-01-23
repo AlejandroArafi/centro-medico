@@ -59,7 +59,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center">
                 <MapPin size={16} className="mr-2 text-blue-500" />
-                <span>Av. Principal 123, Ciudad</span>
+                <span>Av. Principal 123, Santiago</span>
               </li>
               <li className="flex items-center">
                 <Clock size={16} className="mr-2 text-blue-500" />
