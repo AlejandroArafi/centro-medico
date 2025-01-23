@@ -14,7 +14,7 @@ const Header = () => {
             <div className="flex items-center space-x-6">
               <div className="flex items-center">
                 <Phone size={16} className="mr-2" />
-                <span>(555) 123-4567</span>
+                <span>(2) 123-4567</span>
               </div>
               <div className="flex items-center">
                 <Clock size={16} className="mr-2" />
@@ -22,7 +22,7 @@ const Header = () => {
               </div>
               <div className="flex items-center">
                 <MapPin size={16} className="mr-2" />
-                <span>Av. Principal 123, Ciudad</span>
+                <span>Av. Principal 123, Santiago</span>
               </div>
             </div>
             <button className="bg-white text-blue-600 px-4 py-1 rounded-full text-sm font-medium hover:bg-blue-50 transition-colors">
